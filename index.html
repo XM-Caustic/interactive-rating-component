@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .circle-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: hsl(0, 0%, 25%);
+      color: white;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-btn:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    .submit-btn {
+      background-color: orange;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .submit-btn:hover {
+      background-color: #ffb84d;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: hsl(0, 0%, 0%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: hsl(0, 0%, 15%);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 350px;
+      text-align: left;
+      color: white;
+      font-family: Arial, sans-serif;
+    }    
+
+    img {
+      height: 35px;
+      float: left;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center; /* center horizontally */
+      gap: 12px; /* spacing between buttons */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+      <img src="/images/icon-star.svg" alt=""><br>
+
+      <h1>How did we do?</h1>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+      </p>
+
+      <div class="buttons">
+        <button class="circle-btn">1</button>
+        <button class="circle-btn">2</button>
+        <button class="circle-btn">3</button>
+        <button class="circle-btn">4</button>
+        <button class="circle-btn">5</button>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+
+  </div>
+  
+</body>
+</html>
